@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Modern Weather Dashboard</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="weather-dashboard">
+    <h1>Weather Dashboard</h1>
+    <form id="weather-form">
+      <div class="input-group">
+        <input type="text" id="city-input" placeholder="Enter city name">
+        <button type="submit"><i class="fas fa-search"></i></button>
+      </div>
+    </form>
+    <div id="weather-info" class="hidden">
+      <h2 id="city-name"></h2>
+      <p id="temperature"></p>
+      <p id="weather-condition"></p>
+      <img id="weather-icon" alt="Weather Icon">
+    </div>
+    <p id="error-message"></p>
+  </div>
+  <script src="https://kit.fontawesome.com/662a6f5fe3.js" crossorigin="anonymous"></script>
+  <script src="scripts.js"></script>
+</body>
+</html>
